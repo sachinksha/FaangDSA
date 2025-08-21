@@ -1,7 +1,18 @@
+/**
+ * Array Problem
+ * Two Sum Problem
+ * Given an array, find the indices that add up to the target value
+ */
 (function () {
     const nums = [1, 3, 7, 9, 2];
     const target = 11;
     console.log(nums, " - ", target)
+    /**
+     * 
+     * @param {number[]} nums 
+     * @param {number} target 
+     * @returns {number[]}
+     */
     const getTargetSumBruteForce = function (nums, target) {
         for (let i = 0; i < nums.length; i++) {
             let numberToFind = target - nums[i];
@@ -20,6 +31,12 @@
     // console.log('result:', getTargetSumBruteForce([5, 6], target));
     // console.log('O(n) = n2');
 
+    /**
+     * 
+     * @param {number[]} nums 
+     * @param {number} target 
+     * @returns {number[]}
+     */
     const optimized_getTwoSum = function (nums, target) {
         let map = {};
         for (let i = 0; i < nums.length; i++) {
@@ -41,8 +58,13 @@
     // console.log('O(n) = n');
 
 
+    /**
+     * 
+     * @param {number[]} nums 
+     * @param {number} target 
+     * @returns {number[]}
+     */
     const master_getTwoSum = function (nums, target) {
-        // console.log(`master_getTwoSum ${nums}, target: ${target}`);
         let map = {};
         for (let i = 0; i < nums.length; i++) {
             const currentMapVal = map[nums[i]];
