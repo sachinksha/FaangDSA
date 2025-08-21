@@ -14,12 +14,12 @@
         }
         return null;
     }
-    // console.log('result:', getTargetSumBruteForce(nums, target));
-    // console.log('result:', getTargetSumBruteForce([], target));
-    // console.log('result:', getTargetSumBruteForce([11], target));
-    // console.log('result:', getTargetSumBruteForce([1], target));
-    // console.log('result:', getTargetSumBruteForce([5, 6], target));
-    // console.log('O(n) = n2');
+    console.log('result:', getTargetSumBruteForce(nums, target));
+    console.log('result:', getTargetSumBruteForce([], target));
+    console.log('result:', getTargetSumBruteForce([11], target));
+    console.log('result:', getTargetSumBruteForce([1], target));
+    console.log('result:', getTargetSumBruteForce([5, 6], target));
+    console.log('O(n) = n2');
 
     const optimized_getTwoSum = function (nums, target) {
         // console.log(`optimized_getTwoSum ${nums}, target: ${target}`);
