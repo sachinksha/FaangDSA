@@ -12,3 +12,6 @@ Master coding interviews at FAANG - PSDS / DSA rounds problems / LeetCode proble
 3. **LeetCode Problem 42** 
 
     **Hard array problem** Critical thinking problem; Given an array of integers representing an elevation map, where width of each bar is 1, return how much rain water can be trapped
+4. **LeetCode Problem 844** 
+
+    **String problem - Backspace Compare** - compare two strings A, B check if they are equal. every "#" is a backspace character. 
