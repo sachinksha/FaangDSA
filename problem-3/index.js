@@ -31,6 +31,7 @@
     let height = [0, 1, 0, 2, 1, 0, 3, 1, 0, 1, 2];
     // let result = bruteForce_getTotalTrappedRainWater(height);
     // console.log(`bruteForce_getTotalTrappedRainWater(${height}) : ${result}`);
+    // console.log(`completxity is O(n^2)`);
 
     const twoPointer_getTotalTrappedRainWater = function (height) {
         let leftP = 0, rightP = height.length - 1, maxL = height[leftP], maxR = height[rightP], totalWater = 0;
@@ -81,4 +82,5 @@
     }
     let result = twoPointer_getTotalTrappedRainWater(height);
     console.log(`twoPointer_getTotalTrappedRainWater(${height}) : ${result}`);
+    console.log(`complexity is O(n)`);
 })();
