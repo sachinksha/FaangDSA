@@ -35,8 +35,8 @@ const optimizedFindTwoSum = function (nums, target) {
     }
     for (let i = 0; i < nums.length; i++) {
         const value = nums[i];
-        if (map[nums[i]] >= 0 && map[nums[i]] !== i) {
-            return [i, map[nums[i]]]
+        if (map[value] >= 0 && map[value] !== i) {
+            return [i, map[value]]
         }
     }
 }
