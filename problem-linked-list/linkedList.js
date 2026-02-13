@@ -16,12 +16,23 @@ const reverseLinkedList = (head) => {
     return prev;
 }
 
+const reverseRangeOfLinkedList = (head, m, n) => {
+    return reverseLinkedList(head);
+}
+
 const makeLinkedListFromArray = (arr) => {
     let head = null;
+    let tail = null;
     let i = 0;
     while(i<arr.length) {
-        let node = {value: arr[i], next: head}
-        head = node;
+        let node = {value: arr[i], next: null}
+        if(!head){
+            head = node;
+        }
+        if(tail) {
+            tail.next = node;
+        }
+        tail = node;
         i++
     }
     return head;
@@ -37,4 +48,4 @@ const makeArrayFromLinkedList = (head) => {
     return arr;
 }
 
-module.exports = {description, reverseLinkedList, makeLinkedListFromArray, makeArrayFromLinkedList};
+module.exports = {description, reverseLinkedList, reverseRangeOfLinkedList, makeLinkedListFromArray, makeArrayFromLinkedList};
