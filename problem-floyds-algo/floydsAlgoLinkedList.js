@@ -5,20 +5,20 @@
 const description = "user input linked list - detect a cycle using Floyd's Tortoise and Hare algorithm and return the starting point of the cycle";
 
 const floydsAlgo = (head) => {
-    let tortoise = head;
     let hare = head;
+    let tortoise = head;
     let meetingPoint = null;
-    while(hare && tortoise) {
-        hare = hare.next;
-        if(tortoise.next)
+    while(tortoise && hare) {
+        tortoise = tortoise.next;
+        if(hare.next)
         {
-            tortoise = tortoise.next.next;
+            hare = hare.next.next;
         }
         else {
             return false;
         }
-        if(hare === tortoise) {
-            meetingPoint = hare; // either hare or tortoise can be called the meeting point here
+        if(tortoise === hare) {
+            meetingPoint = tortoise; // either hare or tortoise can be called the meeting point here
             break;
         }
     }
