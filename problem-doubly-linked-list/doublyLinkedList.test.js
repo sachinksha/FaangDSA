@@ -93,11 +93,8 @@ test(linkedList.description, () => {
     for (let i = 0; i < testParams.length; i++) {
         let currentTestParams = testParams[i];
         const inputList = linkedList.makeLinkedListFromArray(currentTestParams.input);
-        console.log(inputList);
         const resultList = linkedList.flattenDoublyLinkedList(inputList);
-        console.log(resultList)
         const resultArray = linkedList.makeArrayFromLinkedList(resultList);
-        console.log(resultArray);
         expect(currentTestParams.result).toEqual(resultArray);
     }
 });
