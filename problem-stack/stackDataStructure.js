@@ -18,7 +18,8 @@ const stackDS = {
     size: function () {
         return this.stack.length;
     },
-    init: function () {
+    // Unable to fix the issue of stack instance retaining values from previous test cases. Hence added this init method to reset the stack instance before each test case.
+    init: function () { 
         this.stack = [];
     }
 };
