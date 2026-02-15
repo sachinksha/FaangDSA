@@ -27,3 +27,10 @@ test(quickSort.description, () => {
     }
 });
 
+test("Quick Sort - in place " + quickSort.description, () => {
+    for (let i = 0; i < testParams.length; i++) {
+        let currentTestParams = testParams[i];
+        const resultArray = quickSort.quickSortInPlace(currentTestParams.input);
+        expect(currentTestParams.result).toEqual(resultArray);
+    }
+});

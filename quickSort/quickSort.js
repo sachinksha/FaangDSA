@@ -20,4 +20,27 @@ const quickSort = (arr) => {
     }
     return [...quickSort(left), pivot, ...quickSort(right)];
 }
-module.exports = { description, quickSort };
+
+const quickSortInPlace = (arr, left = 0, right = arr.length - 1) => {
+    if (left < right) {
+        const pivotIndex = partition(arr, left, right);
+        quickSortInPlace(arr, left, pivotIndex - 1);
+        quickSortInPlace(arr, pivotIndex + 1, right);
+    }
+    return arr;
+}
+
+const partition = (arr, left, right) => {
+    const pivotValue = arr[right];
+    let partitionIndex = left;
+    for (let j = left; j < right; j++) {
+        if (arr[j] < pivotValue) {
+            [arr[partitionIndex], arr[j]] = [arr[j], arr[partitionIndex]];
+            partitionIndex++;
+        }
+    }
+    [arr[partitionIndex], arr[right]] = [arr[right], arr[partitionIndex]];
+    return partitionIndex;
+}
+
+module.exports = { description, quickSort, quickSortInPlace };
