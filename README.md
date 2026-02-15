@@ -46,4 +46,4 @@ These videos are by ZerotoMastery.io
     **Implement Queue using stack datastructure**
 
 13. **Sorting Problem**
-    **Get the Kth largest element of an unsorted array. Ignore duplicates" - Use qick sort to sort the array first
+    **Get the Kth largest element of an unsorted array** - Ignore duplicates - Use qick sort to sort the array first
