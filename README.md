@@ -47,3 +47,8 @@ These videos are by ZerotoMastery.io
 
 13. **Sorting Problem**
     **Get the Kth largest element of an unsorted array** - Ignore duplicates - Use qick sort to sort the array first
+    **Get the Kth smallest element of an unsorted array** - Hoare's quick select algorithm implementation
+
+14. **Binary Search Algorithm**
+    Input array is sorted in ascending order
+
