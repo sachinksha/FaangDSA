@@ -61,5 +61,12 @@ These videos are by ZerotoMastery.io
 
 14. **Binary Search Algorithm**
 
-    Input array is sorted in ascending order
+    Input array is sorted in ascending order; find an element.
+    Sub Problem - Find element's range in the sorted array. Use binary search to perform the secondary search in both directions.
+
+15. **Binary tree - Find max depth**
+
+    Given a tree, perform DFS and get depth of the tree.
+
+
 
