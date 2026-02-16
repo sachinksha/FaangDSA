@@ -21,34 +21,45 @@ These videos are by ZerotoMastery.io
     **String problem - Backspace Compare** - compare two strings A, B check if they are equal. every "#" is a backspace character.
 
 5. **LeetCode Problem 3**
+
     **String problem - Longest substring without repeating characters** - Return the length of longest contigious substring without repeating characters
 
 6. **LeetCode Problem 125**
+
     **String Problem - Subproblem - Palindromes** - Check if given string is a valid palindrome. Standard problem.
     Assume only alpha numberic characters are valid. remove spaces, punctuations, etc
 
 7. **Linked List Problem**
+
     **Reverse a given Linked List**
 
 8. **Doubly linked list Problem**
+
     **Subproblem - Flatten a given doubly linked list**
 
 9. **Cycle detection in a linked list**
+
     **Floyd's tortoise and hare algorithm** - Implementation of the algo to check for cycle in a given linked list and get the starting point.
 
 10. **Stack Datastructure**
+
     **Subproblem - check for string with paranthesis for validity**
 
 11. **Stack Problem**
+
     **Subproblem** - Remove the least number of brackets to make a given string with brackets a valid string. It may only contain brackets and lower case characters.
 
 12. **Queue Datastructure**
+
     **Implement Queue using stack datastructure**
 
 13. **Sorting Problem**
+
     **Get the Kth largest element of an unsorted array** - Ignore duplicates - Use qick sort to sort the array first
+
     **Get the Kth smallest element of an unsorted array** - Hoare's quick select algorithm implementation
 
 14. **Binary Search Algorithm**
+
     Input array is sorted in ascending order
 
