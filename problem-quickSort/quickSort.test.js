@@ -19,6 +19,37 @@ const testParams = [
     }
 ];
 
+const testParamsQuickSelect = [
+    {
+        "input1": [4, 3, 2, 1, 6, 5],
+        "input2": 2,
+        "result": 3
+    },
+    {
+        "input1": [500, 400, 300, 200, 100],
+        "input2": 4,
+        "result": 500
+    },
+    {
+        "input1": [6],
+        "input2": 0,
+        "result": 6
+    },
+    {
+        "input1": [5, 3, 1, 2, 4],
+        "input2": 3,
+        "result": 4
+    }
+];
+
+test("Quick Select - " + quickSort.description, () => {
+    for (let i = 0; i < testParamsQuickSelect.length; i++) {
+        let currentTestParams = testParamsQuickSelect[i];
+        const resultArray = quickSort.quickSelect(currentTestParams.input1, 0, currentTestParams.input1.length - 1, currentTestParams.input2);
+        expect(currentTestParams.result).toEqual(resultArray);
+    }
+});
+
 test(quickSort.description, () => {
     for (let i = 0; i < testParams.length; i++) {
         let currentTestParams = testParams[i];

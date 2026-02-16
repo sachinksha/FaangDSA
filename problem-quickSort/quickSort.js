@@ -30,6 +30,20 @@ const quickSortInPlace = (arr, left = 0, right = arr.length - 1) => {
     return arr;
 }
 
+const quickSelect = (arr, left = 0, right = arr.length - 1, k) => {
+    if (left === right) {
+        return arr[left];
+    }
+    const pivotIndex = partition(arr, left, right);
+    if (k === pivotIndex) {
+        return arr[k];
+    } else if (k < pivotIndex) {
+        return quickSelect(arr, left, pivotIndex - 1, k);
+    } else {
+        return quickSelect(arr, pivotIndex + 1, right, k);
+    }
+}
+
 const partition = (arr, left, right) => {
     const pivotValue = arr[right];
     let partitionIndex = left;
@@ -43,4 +57,4 @@ const partition = (arr, left, right) => {
     return partitionIndex;
 }
 
-module.exports = { description, quickSort, quickSortInPlace };
+module.exports = { description, quickSort, quickSortInPlace, quickSelect };
