@@ -36,7 +36,7 @@ const binarySearchRange = (arr, target) => {
 }
 
 // Secondary search using binary search for the range of indices of given target
-const binarySearchRangeByInices = (arr, left = 0, right = arr.length-1, target) =>  {
+const binarySearchRangeByIndices = (arr, left = 0, right = arr.length-1, target) =>  {
     if(!arr.length) {
         return [-1, -1];
     }
@@ -57,4 +57,4 @@ const binarySearchRangeByInices = (arr, left = 0, right = arr.length-1, target) 
     }
     return [leftPos, rightPos];
 }
-module.exports = { description, binarySearch, binarySearchRange, binarySearchRangeByInices };
+module.exports = { description, binarySearch, binarySearchRange, binarySearchRangeByIndices: binarySearchRangeByIndices };

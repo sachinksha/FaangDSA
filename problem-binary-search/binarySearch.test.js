@@ -1,4 +1,4 @@
-const { binarySearchRange, binarySearchRangeByInices } = require('./binarySearch');
+const { binarySearchRange, binarySearchRangeByIndices } = require('./binarySearch');
 
 const binarySearch = require('./binarySearch').binarySearch;
 
@@ -68,7 +68,7 @@ test("Binary Search Range using Linear search as secondary search; - " + binaryS
 test("Binary Search Range using Binary search again for secondary search - " + binarySearch.description, () => {
     for (let i = 0; i < testRangeParams.length; i++) {
         let currentTestParams = testRangeParams[i];
-        const result = binarySearchRangeByInices(currentTestParams.input, 0, currentTestParams.input.length-1, currentTestParams.target);
+        const result = binarySearchRangeByIndices(currentTestParams.input, 0, currentTestParams.input.length-1, currentTestParams.target);
         expect(currentTestParams.result).toEqual(result);
     }
 });
