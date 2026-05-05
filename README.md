@@ -68,5 +68,11 @@ These videos are by ZerotoMastery.io
 
     Given a tree, perform DFS and get depth of the tree.
 
+16. **Binary tree - Level Order Traversal**
 
+    Given a binary tree, return a level order traversal result
+
+17. **Binary tree - Right Side Perspective/View**
+
+    Given a binary tree, return the top nodes value in an array when the tree is viewed from the right side.
 
